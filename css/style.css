@@ -19,15 +19,13 @@ html {
   font-weight: 400;
 }
 
-.hidden {
-  display: none;
+@font-face {
+  font-family: "quicksand";
+  src: url("../assets/font/quicksand.woff2") format("woff2"), url("../assets/font/quicksand.woff") format("woff");
+  font-weight: 400;
 }
 
-body {
-
-}
-
-.body{
+.body {
   width: 96rem;
   margin: auto;
   background-color: #FEFFFE;
@@ -37,27 +35,8 @@ body {
   margin-top: 5rem;
 }
 
-h2 {
-  font-family: futura;
-  font-size: 2.5rem;
-  color: #1102DF;
-  width: 15rem;
-  line-height: 3rem;
-  margin-bottom: 2rem;
-}
-
-.header-p {
-  font-family: 'Quicksand', sans-serif;
-  color: #3F3F3F;
-  font-size: 1.5rem;
-  width: 33rem;
-  border-left: 0.3rem solid #1102DF;
-  padding-left: 1rem;
-  line-height: 2.2rem;
-}
-
-.header-img {
-  margin-top: -5rem;
+.hidden {
+  display: none;
 }
 
 .header {
@@ -72,65 +51,29 @@ h2 {
   margin-top: 12rem;
 }
 
-.download {
-  display: flex;
-  justify-content: center;
-}
-
-
-.w-question {
-  margin-top: 10rem;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10rem;
-}
-
-article{
-  padding-right: 5rem;
-}
-
-h3 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 550;
-  font-size: 1.7rem;
-  text-align: center;
-}
-
-#who{
-  color: #1102DF;
-}
-
-#what{
-  color: #F3A0AE;
-}
-
-#why{
-  color:#1CD4A8;
-}
-
-#how{
-  color:#1102DF;
-}
-.text-wq{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.5rem;
+.header-p {
+  font-family: quicksand;
   color: #3F3F3F;
-  font-weight: 400;
-  text-align: center;
-  line-height: 2rem;
-  padding-top: 1rem;
+  font-size: 1.5rem;
+  width: 33rem;
+  border-left: 0.3rem solid #1102DF;
+  padding-left: 1rem;
+  line-height: 2.2rem;
 }
 
-.how-section{
-  margin-bottom: 10rem;
-  margin-top: 15rem;
-
+.header-img {
+  margin-top: -5rem;
 }
 
-.text-how{
-  width: 75rem;
-  margin: auto;
-  line-height: 2.5rem;
+
+
+h2 {
+  font-family: futura;
+  font-size: 2.5rem;
+  color: #1102DF;
+  width: 15rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -143,17 +86,9 @@ h3 {
   margin-top: -6rem;
 }
 
-.container-pdf {
-  display: flex;
-  width: 75rem;
-  margin:auto;
-  margin-top: 2rem;
-  justify-content: flex-end;
-}
-
-
 .btn {
   display: flex;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
   margin: 10px;
@@ -163,16 +98,14 @@ h3 {
   color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: quicksand;
   font-weight: 450;
   font-size: 1.8rem;
   width: 25rem;
   height: 7rem;
-  cursor: auto;
   outline: none;
-  border:none;
+  border: none;
 }
-
 
 .btn:hover {
   background-position: right center;
@@ -183,34 +116,140 @@ h3 {
   background-image: linear-gradient(to right, #FE5C5E 0%, #FA7F38 51%, #FE5C5E 100%);
 }
 
+.w-question {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rem;
+}
 
-footer{
-  background-color:#1CD4A8;
-  height: 20rem;
+article {
+  padding-right: 5rem;
+}
+
+#who {
+  color: #1102DF;
+}
+
+#what {
+  color: #F3A0AE;
+}
+
+#why {
+  color: #1CD4A8;
+}
+
+.text-wq {
+  font-family: quicksand;
+  font-size: 1.5rem;
+  color: #3F3F3F;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2rem;
+  padding-top: 1rem;
+}
+
+.how{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.how-text{
+  margin-top: 18rem;
 
 }
 
-.footer-container{
+.text-how {
+  margin: auto;
+  line-height: 2.5rem;
+  font-family: quicksand;
+  font-size: 1.5rem;
+  color: #3F3F3F;
+  font-weight: 400;
+  margin-left: -20rem;
+  margin-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+h3 {
+  font-family: quicksand;
+  font-weight: 550;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+
+#how {
+  color: #1102DF;
+}
+
+
+
+
+
+
+
+
+.container-pdf {
+  display: flex;
+  width: 75rem;
+  margin: auto;
+  justify-content: flex-end;
+}
+
+
+
+
+footer {
+  background-color: #1CD4A8;
+  height: 20rem;
+  padding-top: 5rem;
+}
+
+.footer-container {
   width: 96rem;
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-bottom: 2rem;
 }
 
-.footer-logo{
+.footer-logo {
   padding-left: 8rem;
 }
 
-.footer-p{
+.footer-p {
   width: 96rem;
   margin: auto;
   display: flex;
   justify-content: flex-end;
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: quicksand;
   font-weight: 400;
   font-size: 1.2rem;
+}
+
+
+.footer-team{
+  color: white;
+  font-family: quicksand;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.team{
+  font-weight: 600;
 }
